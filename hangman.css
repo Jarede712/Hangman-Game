@@ -1,4 +1,5 @@
-/* * is a wildcard selector, it selects all elements */
+/* * is a wildcard selector, it selects all elements it will add
+    the following styles to all elements */
 * {
     padding: 0;
     margin: 0;
@@ -6,10 +7,12 @@
     font-family: sans-serif;
 }
 
+/* body will be used to display the background color */
 body {
     background-color: blue;
 }
 
+/* .container will be used to display the game */
 .container {
     font-size: 16px;
     background-color: antiquewhite;
@@ -24,12 +27,12 @@ body {
     box-shadow: 0 1.2em 2.4em rgba(111, 80, 247, 0.2);
 }
 
-/*options-container is the parent of the buttons*/
+/*options-container will be used to display the buttons*/
 #options-container {
     text-align: center; /*to center the buttons*/
 }
 
-/*options-container div is the child of the options-container*/
+/*options-container div will be used to display the buttons*/
 #options-container div {
     width: 100%;
     display: flex;
@@ -37,7 +40,7 @@ body {
     margin: 1.2em 0 2.4em 0; /* this margin will be applied to the top, right, bottom and left of the div*/
 }
 
-/*options-container button is the child of the options-container*/
+/*options-container button will be used to display the buttons*/
 #options-container button {
     padding: 0.6em 1.2em;
     border: 3px solid black;
@@ -48,21 +51,21 @@ body {
     cursor: pointer;
 }
 
-/*options-container button:disabled is the child of the options-container button*/
+/*options-container button:disabled will be used to change the border color, text color and background color of the button when it is disabled*/
 #options-container button:disabled {
     border: 3px solid grey;
     color: grey;
     background-color: white;
 }
 
-/*options-container button:active is the child of the options-container button*/
+/*options-container button:active will be used to change the background color of the button when it is clicked*/
 #options-container button:active {
     background-color: rgb(146, 78, 230);
     border: 3px solid black;
     color: white;
 }
 
-/* .letter-container is the parent of the buttons */
+/* .letter-container will be used to display the letters */
 .letter-container {
     width: 100%;
     display: flex;
@@ -71,7 +74,7 @@ body {
     gap: 0.6em;
 }
 
-/* #letter-container button is the child of the letter-container */
+/* #letter-container button will be used to display the letters */
 #letter-container button {
     height: 2.4em;
     width: 2.4em;
@@ -80,7 +83,7 @@ body {
     cursor: pointer;
 }
 
-/* .new-game-popup is the parent of the buttons */
+/* .new-game-popup will be used to display the popup */
 .new-game-popup {
     background-color: white;
     position: absolute;
@@ -95,6 +98,7 @@ body {
     border-radius: 0.6em;
 }
 
+/* #user-input-section will be used to display the user input section */
 #user-input-section {
     display: flex;
     justify-content: center;
@@ -139,10 +143,12 @@ canvas {
     cursor: pointer;
 }
 
+/* .win-msg will be used to display the win message */
 .win-msg {
     color: aqua;
 }
 
+/* .lose-msg will be used to display the lose message */
 .lose-msg {
     color: rgb(255, 42, 0);
 }   
