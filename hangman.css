@@ -1,0 +1,148 @@
+/* * is a wildcard selector, it selects all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: blue;
+}
+
+.container {
+    font-size: 16px;
+    background-color: antiquewhite;
+    width: 90vw; /* 90% of the viewport width */
+    max-width: 34em; /* 544px */ /*34em means 34 times the font-size*/
+    position: absolute; /*to center the container*/
+    transform: translate(-50%, -50%); /*translateX(-50%) translateY(-50%)*/
+    top: 50%; /*to center the container*/
+    left: 50%; /*to center the container*/
+    padding: 3em; /* 3em means 3 times the font-size*/
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 2.4em rgba(111, 80, 247, 0.2);
+}
+
+/*options-container is the parent of the buttons*/
+#options-container {
+    text-align: center; /*to center the buttons*/
+}
+
+/*options-container div is the child of the options-container*/
+#options-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  /*to space the buttons evenly*/
+    margin: 1.2em 0 2.4em 0; /* this margin will be applied to the top, right, bottom and left of the div*/
+}
+
+/*options-container button is the child of the options-container*/
+#options-container button {
+    padding: 0.6em 1.2em;
+    border: 3px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 0.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*options-container button:disabled is the child of the options-container button*/
+#options-container button:disabled {
+    border: 3px solid grey;
+    color: grey;
+    background-color: white;
+}
+
+/*options-container button:active is the child of the options-container button*/
+#options-container button:active {
+    background-color: rgb(146, 78, 230);
+    border: 3px solid black;
+    color: white;
+}
+
+/* .letter-container is the parent of the buttons */
+.letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+}
+
+/* #letter-container button is the child of the letter-container */
+#letter-container button {
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 0.3em;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* .new-game-popup is the parent of the buttons */
+.new-game-popup {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /*to center the popup*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.6em;
+}
+
+#user-input-section {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    margin: 0.6em 0 1.2em 0;
+}
+
+/* canvas is the child of the new-game-popup */ /* it will be used to draw the hangman */
+canvas {
+    display: block;
+    margin: auto;
+    border: 10px solid blue;
+    border-radius: 10px;
+}
+
+/* .hide will be used to hide the popup */
+.hide {
+    display: none;
+}
+
+/* #result-text h2 will be used to display the result of the game in a heading */
+#result-text h2{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+
+/* #result-text p will be used to display the result of the game in a paragraph */
+#result-text p {
+    font-size: 1.25em;
+    margin: 1em 0 2em 0;   
+}
+
+/* #result-text span will be used to display the result of the game in a span */
+#result-text span {
+    font-weight: 600;
+    padding: 0.5em 1em;
+    background-color: rgb(146, 78, 230);
+    border: 3px solid black;
+    color: white;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.win-msg {
+    color: aqua;
+}
+
+.lose-msg {
+    color: rgb(255, 42, 0);
+}   
